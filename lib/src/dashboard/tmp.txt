@@ -1,0 +1,323 @@
+drawer: SafeArea(
+        child: ClipRRect(
+          borderRadius: const BorderRadius.only(
+              topRight: Radius.circular(20), bottomRight: Radius.circular(20)),
+          child: Drawer(
+            surfaceTintColor: Colors.white,
+            backgroundColor: Colors.white,
+            child: ListView(
+              // Important: Remove any padding from the ListView.
+              padding: EdgeInsets.zero,
+              children: [
+                DrawerHeader(
+                  duration: const Duration(seconds: 2),
+                  decoration: const BoxDecoration(
+                      borderRadius: BorderRadius.only(
+                          bottomLeft: Radius.circular(10),
+                          bottomRight: Radius.circular(20)),
+                      color: Colors.redAccent,
+                      shape: BoxShape.rectangle),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    children: [
+                      const CircleAvatar(
+                        radius: 40,
+                        backgroundImage: NetworkImage(
+                            'https://media.licdn.com/dms/image/D4D03AQFm99I7ryL32g/profile-displayphoto-shrink_400_400/0/1675770329460?e=1681344000&v=beta&t=nwFb-HReo4mBif-VHwMh9HkTMPfu_0gzhajFef5Qb_o'),
+                      ),
+                      const SizedBox(width: 10),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            Data().datamahasiswa['nama'].toString(),
+                            style: const TextStyle(
+                                fontFamily: 'SFPro',
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
+                          ),
+                          const SizedBox(height: 5),
+                          Text(
+                            Data().datamahasiswa['nim'].toString(),
+                            style: const TextStyle(
+                                fontFamily: 'SFPro',
+                                fontSize: 17,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white),
+                          ),
+                        ],
+                      )
+                    ],
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    leading: const Icon(
+                      Icons.home,
+                      size: 32,
+                    ),
+                    title: const Text(
+                      'Beranda',
+                      style: TextStyle(
+                          fontFamily: 'SFPro',
+                          fontSize: 17,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    onTap: () {},
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    leading: const Icon(
+                      Icons.notifications,
+                      size: 32,
+                    ),
+                    title: const Text(
+                      'Notifkasi',
+                      style: TextStyle(
+                          fontFamily: 'SFPro',
+                          fontSize: 17,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    onTap: () {},
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    leading: const Icon(
+                      Icons.edit_document,
+                      size: 32,
+                    ),
+                    title: const Text(
+                      'KRS',
+                      style: TextStyle(
+                          fontFamily: 'SFPro',
+                          fontSize: 17,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    onTap: () {},
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    leading: const Icon(
+                      Icons.calendar_month,
+                      size: 32,
+                    ),
+                    title: const Text(
+                      'Jadwal Kuliah',
+                      style: TextStyle(
+                          fontFamily: 'SFPro',
+                          fontSize: 17,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    onTap: () {},
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    leading: const Icon(
+                      Icons.attach_money_sharp,
+                      size: 32,
+                    ),
+                    title: const Text(
+                      'Keuangan',
+                      style: TextStyle(
+                          fontFamily: 'SFPro',
+                          fontSize: 17,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    onTap: () {},
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    leading: const Icon(
+                      Icons.person_pin_rounded,
+                      size: 32,
+                    ),
+                    title: const Text(
+                      'Perwalian',
+                      style: TextStyle(
+                          fontFamily: 'SFPro',
+                          fontSize: 17,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    onTap: () {},
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    leading: const Icon(
+                      Icons.local_activity_sharp,
+                      size: 32,
+                    ),
+                    title: const Text(
+                      'Poin',
+                      style: TextStyle(
+                          fontFamily: 'SFPro',
+                          fontSize: 17,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    onTap: () {},
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    leading: const Icon(
+                      Icons.checklist_rounded,
+                      size: 32,
+                    ),
+                    title: const Text(
+                      'Presensi Kegiatan',
+                      style: TextStyle(
+                          fontFamily: 'SFPro',
+                          fontSize: 17,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    onTap: () {},
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    leading: const Icon(
+                      Icons.line_axis_sharp,
+                      size: 32,
+                    ),
+                    title: const Text(
+                      'IPK',
+                      style: TextStyle(
+                          fontFamily: 'SFPro',
+                          fontSize: 17,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    onTap: () {},
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    leading: const Icon(
+                      Icons.bar_chart_rounded,
+                      size: 32,
+                    ),
+                    title: const Text(
+                      'KHS',
+                      style: TextStyle(
+                          fontFamily: 'SFPro',
+                          fontSize: 17,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    onTap: () {},
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    leading: const Icon(
+                      Icons.data_thresholding_outlined,
+                      size: 32,
+                    ),
+                    title: const Text(
+                      'Transkrip',
+                      style: TextStyle(
+                          fontFamily: 'SFPro',
+                          fontSize: 17,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    onTap: () {},
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    leading: const Icon(
+                      Icons.menu_book_rounded,
+                      size: 32,
+                    ),
+                    title: const Text(
+                      'Perpustakaan',
+                      style: TextStyle(
+                          fontFamily: 'SFPro',
+                          fontSize: 17,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    onTap: () {},
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    leading: const Icon(
+                      Icons.military_tech_outlined,
+                      size: 32,
+                    ),
+                    title: const Text(
+                      'Sipresmawa',
+                      style: TextStyle(
+                          fontFamily: 'SFPro',
+                          fontSize: 17,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    onTap: () {},
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    leading: const Icon(
+                      Icons.info,
+                      size: 32,
+                    ),
+                    title: const Text(
+                      'Tentang',
+                      style: TextStyle(
+                          fontFamily: 'SFPro',
+                          fontSize: 17,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    onTap: () {},
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    leading: const Icon(
+                      Icons.exit_to_app_sharp,
+                      size: 32,
+                    ),
+                    title: const Text(
+                      'Log out',
+                      style: TextStyle(
+                          fontFamily: 'SFPro',
+                          fontSize: 17,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    onTap: () {},
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
+
+
+
+
+      Container(
+            height: MediaQuery.of(context).size.height,
+            width: MediaQuery.of(context).size.width,
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage('assets/images/background.jpg'),
+                  fit: BoxFit.cover),
+            ),
+            child: ListView(),
+          ),
+
+
+'Alur KRS Online Semester Ganjil TA 2023/2024',
+      'Semester Antara Genap 2023/2024',
+      'Alur Herregistrasi dan KRS Online',
+      'Sosialisasi dan Sharing Session kampus 3 mengajar',
+      'Alur Pendaftaran Wisuda XXXVII'
+
+
+DateFormat('EEEE').format(date).toString()
