@@ -320,4 +320,6 @@ drawer: SafeArea(
       'Alur Pendaftaran Wisuda XXXVII'
 
 
-DateFormat('EEEE').format(date).toString()
+DateFormat('EEEE').format(date).toString
+
+how tio isoa; 
